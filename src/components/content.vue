@@ -281,13 +281,14 @@ const clearCurrentValue = () => {
 
 .calc {
     width: 50%;
-    height: 70%;
+    height: 60vh;
   
 
     &__container {
         height: 100%;
         padding: 10px;
         background-color: var(--calc-bg);
+        border-radius: 10px;
     }
 
     &__display {
@@ -300,6 +301,8 @@ const clearCurrentValue = () => {
     justify-content: space-around;
     width: 100%;
     text-align: end;
+    border-radius: 10px;
+
 
     .display-operation-value {
         color: var(--operation-value);
@@ -314,7 +317,7 @@ const clearCurrentValue = () => {
 }
     &__content {
     background-color: var(--calc-bg);
-    height: 80%;
+    height: calc(80% - 10px);
     color: white;
     display: grid;
     width: 100%;
@@ -401,6 +404,9 @@ const clearCurrentValue = () => {
 @media screen and (max-width: 375px) {
     .wrapper {
         font-size: 0.5em;
+    }
+    .calc {
+        height: 50vh;
     }
 }
 @media screen and (max-width: 320px) {
