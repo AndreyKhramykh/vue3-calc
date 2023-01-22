@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Main;
+    src: url(@/assets/fonts/PressStart2P-Regular.ttf);
+}
+
+:root {
+    --calc-bg: #202020;
+    --disp-bg: #478447;
+    --calc-buttons-numbers: #3B3B3B;
+    --calc-buttons-operators: #2d2b2b;
+    --calc-button-equal: rgb(116, 47, 125);
+    --calc-button-equal-hovered: rgba(116, 47, 125, 0.8); 
+    --symbols: #ffffff;
+    --operation-value: rgba(255, 255, 255, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(@/assets/img/congruent_pentagon.webp);
+    font-family: Main;
+    color: var(--symbols);
+    font-size: 1em;
+}
