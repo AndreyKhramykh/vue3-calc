@@ -326,7 +326,7 @@ const clearCurrentValue = () => {
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     place-items: center;
-    margin: 5px 0px 5px 0px;
+    margin: 5px 0px 0px 0px;
 
     :nth-child(17) {
         grid-area: 5 / 2 / 6 / 3;
@@ -395,6 +395,10 @@ const clearCurrentValue = () => {
     .wrapper {
         font-size: 0.6em;
     }
+    .calc {
+        height: 50vh;
+        width: 80%;
+    }
 }
 @media screen and (max-width: 425px) {
     .wrapper {
@@ -405,9 +409,7 @@ const clearCurrentValue = () => {
     .wrapper {
         font-size: 0.5em;
     }
-    .calc {
-        height: 50vh;
-    }
+    
 }
 @media screen and (max-width: 320px) {
     .wrapper {
